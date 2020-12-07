@@ -16,7 +16,7 @@ spec:
         app: myweb
     spec:
       containers:
-      - image: senthil123/tomcatuidemok8s:3
+      - image: senthil123/tomcatuidemo:4
         imagePullPolicy: Always
         name: myweb
 
