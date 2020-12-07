@@ -21,18 +21,18 @@ spec:
         name: myweb
 
 ---
+---
 apiVersion: v1
-kind: Service
+kind: Service 
 metadata:
+  name: myweb
   labels:
     app: myweb
-  name: myweb
 spec:
-  ports:
-  - nodePort: 32223
-    port: 80
-    protocol: TCP
-    targetPort: 80
   selector:
-    app: myweb
+    app: myweb    
   type: NodePort
+  ports:
+  - nodePort: 31123
+    port: 8080
+    targetPort: 8080
