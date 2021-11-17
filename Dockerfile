@@ -1,4 +1,4 @@
-FROM sivagaja/:v1
+FROM sivagaja/figlet:v1
 LABEL Author="sivagaja"
 LABEL description="Use dockertomcat image as base image for dockertomcat deployment"
 USER root
